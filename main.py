@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 symbol = 'EUR/USD'
 
 def getPrice():
-	data = requests.get('https://fcsapi.com/api/forex/latest?symbol=' + symbol + '&access_key=ulz8KI9wbwTVY2b2BBtUjhoJFDFhyndoqOpmvXqbLuTDGOV9Vu').text
+	data = requests.get('https://fcsapi.com/api/forex/latest?symbol=' + symbol + '&access_key=O3hWhdPCCLlRsuO91Fibl6H8uCxSknKsNvTkKnscYiAo55').text
 	data = json.loads(data)['response']
 	return data[0]['price']
 
